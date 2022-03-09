@@ -1,0 +1,20 @@
+{
+  "projectKey": "ddddds22",
+  "projectBillingTypeId": "4",
+  "defaultCurrencyId": "1",
+  "monthlyAmount": "0",
+  "positionRates": [
+    {
+      "positionLevelId": "4",
+      "rate": "0.95"
+    }
+  ],
+  "numberOfInstallments": "0",
+  "projectInstallments": [
+    {
+      "value": "0",
+      "paymentDate": "2021-12-14T10:25:36.440Z"
+    }
+  ],
+  "specificBuInvestment": "true"
+}

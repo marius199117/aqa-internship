@@ -1,0 +1,94 @@
+{
+  "tokens": {
+    "PATPermissions": "[{\"url\":\"^/?api/Organizations/userPermissions/?$\",\"method\":\"GET\",\"permissions\":[]},{\"url\":\"^/?api/Organizations/?$\",\"method\":\"GET\",\"permissions\":[]},{\"url\":\"^/?api/Organizations/main/?$\",\"method\":\"GET\",\"permissions\":[]},{\"url\":\"^/?api/Organizations/leafs/?$\",\"method\":\"GET\",\"permissions\":[]},{\"url\":\"^/?api/Organizations/[0-9]+/?$\",\"method\":\"GET\",\"permissions\":[\"UnitDetails\",\"BusinessUnitDetails\",\"CompanyDetails\"]},{\"url\":\"^/?api/Organizations/[0-9]+/units/?$\",\"method\":\"GET\",\"permissions\":[]},{\"url\":\"^/?api/Organizations/importEmployeeReportedHours/?$\",\"method\":\"POST\",\"permissions\":[\"Project_ImportReportedHours\"]},{\"url\":\"^/?api/Organizations/benchExport/?$\",\"method\":\"GET\",\"permissions\":[\"CompanyBenchExport\"]},{\"url\":\"^/?api/Organizations/status/?$\",\"method\":\"GET\",\"permissions\":[]},{\"url\":\"^/?api/dashboard/organizations/[0-9]+/forecast/monthly/revenues/?$\",\"method\":\"GET\",\"permissions\":[\"Unit_RevenueDetails_Forecasting\"]},{\"url\":\"^/?api/dashboard/organizations/[0-9]+/forecast/monthly/revenues/totals/?$\",\"method\":\"GET\",\"permissions\":[\"Unit_RevenueTotals_Forecasting\"]},{\"url\":\"^/?api/dashboard/organizations/[0-9]+/employees/forecast/monthly/revenues/?$\",\"method\":\"GET\",\"permissions\":[\"Unit_RevenueDetails\"]},{\"url\":\"^/?api/dashboard/organizations/[0-9]+/employees/forecast/monthly/allocations/?$\",\"method\":\"GET\",\"permissions\":[\"Unit_AllocationDetails\"]},{\"url\":\"^/?api/dashboard/organizations/[0-9]+/forecast/monthly/availability/?$\",\"method\":\"GET\",\"permissions\":[\"Unit_AvailabilityDetails_Forecasting\"]},{\"url\":\"^/?api/dashboard/organizations/[0-9]+/forecast/monthly/availability/totals/?$\",\"method\":\"GET\",\"permissions\":[\"Unit_AvailabilityTotals_Forecasting\"]},{\"url\":\"^/?api/dashboard/organizations/[0-9]+/forecast/monthly/hours/?$\",\"method\":\"GET\",\"permissions\":[\"Unit_HoursDetails_Forecasting\"]},{\"url\":\"^/?api/dashboard/organizations/[0-9]+/forecast/monthly/hours/totals/?$\",\"method\":\"GET\",\"permissions\":[\"Unit_HoursTotals_Forecasting\"]},{\"url\":\"^/?api/dashboard/organizations/[0-9]+/actual/monthly/reportedHours/?$\",\"method\":\"GET\",\"permissions\":[\"Unit_ReportedHoursDetails_Actuals\"]},{\"url\":\"^/?api/dashboard/organizations/[0-9]+/actual/monthly/revenues/?$\",\"method\":\"GET\",\"permissions\":[\"Unit_RevenueDetails_Actuals\"]},{\"url\":\"^/?api/dashboard/organizations/[0-9]+/actual/monthly/revenues/totals/?$\",\"method\":\"GET\",\"permissions\":[\"Unit_RevenueTotals_Actuals\"]},{\"url\":\"^/?api/dashboard/organizations/generateAvailabilityExcel/?$\",\"method\":\"POST\",\"permissions\":[\"Unit_ExcelTeamAvailability\",\"BusinessUnit_ExcelTeamAvailability\"]},{\"url\":\"^/?api/dashboard/organizations/generateRevenueExcel/?$\",\"method\":\"POST\",\"permissions\":[\"Unit_ExcelRevenue\",\"BusinessUnit_ExcelRevenue\"]},{\"url\":\"^/?api/dashboard/organizations/[0-9]+/businessUnit/generateGeneralRevenue/?$\",\"method\":\"GET\",\"permissions\":[\"BusinessUnit_ExcelGeneralExport\"]},{\"url\":\"^/?api/dashboard/top/organizations/generateGeneralExport/?$\",\"method\":\"GET\",\"permissions\":[\"CompanyGeneralExport\"]},{\"url\":\"^/?api/dashboard/top/organizations/[0-9]+/forecast/monthly/revenues/?$\",\"method\":\"GET\",\"permissions\":[\"BusinessUnit_RevenueDetails_Forecasting\"]},{\"url\":\"^/?api/dashboard/top/organizations/[0-9]+/forecast/monthly/revenues/totals/?$\",\"method\":\"GET\",\"permissions\":[\"BusinessUnit_RevenueTotals_Forecasting\"]},{\"url\":\"^/?api/dashboard/top/organizations/[0-9]+/employees/forecast/monthly/revenues/?$\",\"method\":\"GET\",\"permissions\":[\"BusinessUnit_RevenueDetails\"]},{\"url\":\"^/?api/dashboard/top/organizations/[0-9]+/employees/forecast/monthly/allocations/?$\",\"method\":\"GET\",\"permissions\":[\"BusinessUnit_AllocationDetails\"]},{\"url\":\"^/?api/dashboard/top/organizations/[0-9]+/forecast/monthly/availability/?$\",\"method\":\"GET\",\"permissions\":[\"BusinessUnit_AvailabilityDetails_Forecasting\"]},{\"url\":\"^/?api/dashboard/top/organizations/[0-9]+/forecast/monthly/availability/totals/?$\",\"method\":\"GET\",\"permissions\":[\"BusinessUnit_AvailabilityTotals_Forecasting\"]},{\"url\":\"^/?api/dashboard/top/organizations/[0-9]+/forecast/monthly/hours/?$\",\"method\":\"GET\",\"permissions\":[\"BusinessUnit_HoursDetails_Forecasting\"]},{\"url\":\"^/?api/dashboard/top/organizations/[0-9]+/forecast/monthly/hours/totals/?$\",\"method\":\"GET\",\"permissions\":[\"BusinessUnit_HoursTotals_Forecasting\"]},{\"url\":\"^/?api/dashboard/top/organizations/[0-9]+/actual/monthly/reportedHours/?$\",\"method\":\"GET\",\"permissions\":[\"BusinessUnit_ReportedHoursDetails_Actuals\"]},{\"url\":\"^/?api/dashboard/top/organizations/[0-9]+/actual/monthly/revenues/?$\",\"method\":\"GET\",\"permissions\":[\"BusinessUnit_RevenueDetails_Actuals\"]},{\"url\":\"^/?api/dashboard/top/organizations/[0-9]+/actual/monthly/revenues/totals/?$\",\"method\":\"GET\",\"permissions\":[\"BusinessUnit_RevenueTotals_Actuals\"]},{\"url\":\"^/?api/Projects/userPermissions/?$\",\"method\":\"GET\",\"permissions\":[]},{\"url\":\"^/?api/Projects/types/?$\",\"method\":\"GET\",\"permissions\":[]},{\"url\":\"^/?api/Projects/?$\",\"method\":\"GET\",\"permissions\":[]},{\"url\":\"^/?api/Projects/[0-9]+/?$\",\"method\":\"GET\",\"permissions\":[\"EditProjectDetails\"]},{\"url\":\"^/?api/Projects/[0-9]+/dashboardDetails/?$\",\"method\":\"GET\",\"permissions\":[\"ProjectDetails\"]},{\"url\":\"^/?api/Projects/[0-9]+/allocations/?$\",\"method\":\"GET\",\"permissions\":[\"Project_TeamMembersList\"]},{\"url\":\"^/?api/Projects/pim/create/?$\",\"method\":\"POST\",\"permissions\":[\"PIMCreateProject\"]},{\"url\":\"^/?api/Projects/UpdatePIMAllocations/?$\",\"method\":\"POST\",\"permissions\":[\"PATUpdatePIMTeamPlan\"]},{\"url\":\"^/?api/Projects/[0-9]+/?$\",\"method\":\"PUT\",\"permissions\":[\"EditProjectDetails\"]},{\"url\":\"^/?api/Projects/pim/Update/?$\",\"method\":\"PUT\",\"permissions\":[\"PIMEditProject\"]},{\"url\":\"^/?api/Projects/[0-9]+/?$\",\"method\":\"DELETE\",\"permissions\":[\"EditProjectDetails\"]},{\"url\":\"^/?api/Projects/ExtendProjectsAllocationsForecast/?$\",\"method\":\"POST\",\"permissions\":[\"PATAllocationExtender\"]},{\"url\":\"^/?api/Projects/MarkProjectsWithExpiredAllocationsForPIM/?$\",\"method\":\"POST\",\"permissions\":[\"PATMarkAllocationsAsExpired\"]},{\"url\":\"^/?api/Projects/allocations/[0-9a-f]{8}-[0-9a-f]{4}-[0-5][0-9a-f]{3}-[089ab][0-9a-f]{3}-[0-9a-f]{12}/?$\",\"method\":\"GET\",\"permissions\":[\"Project_ViewTeamMemberAllocation\"]},{\"url\":\"^/?api/Projects/allocations/?$\",\"method\":\"POST\",\"permissions\":[\"Project_EditTeamMembers\"]},{\"url\":\"^/?api/Projects/allocations/[0-9a-f]{8}-[0-9a-f]{4}-[0-5][0-9a-f]{3}-[089ab][0-9a-f]{3}-[0-9a-f]{12}/?$\",\"method\":\"PUT\",\"permissions\":[\"Project_EditTeamMembers\"]},{\"url\":\"^/?api/Projects/allocations/[0-9a-f]{8}-[0-9a-f]{4}-[0-5][0-9a-f]{3}-[089ab][0-9a-f]{3}-[0-9a-f]{12}/?$\",\"method\":\"DELETE\",\"permissions\":[\"Project_EditTeamMembers\"]},{\"url\":\"^/?api/Projects/status/?$\",\"method\":\"GET\",\"permissions\":[]},{\"url\":\"^/?api/dashboard/projects/[0-9]+/forecast/monthly/rates/?$\",\"method\":\"GET\",\"permissions\":[\"Project_RateDetails_Forecasting\"]},{\"url\":\"^/?api/dashboard/projects/[0-9]+/forecast/monthly/revenues/?$\",\"method\":\"GET\",\"permissions\":[\"Project_RevenueDetails_Forecasting\"]},{\"url\":\"^/?api/dashboard/projects/[0-9]+/forecast/monthly/revenues/totals/?$\",\"method\":\"GET\",\"permissions\":[\"Project_RevenueTotals_Forecasting\"]},{\"url\":\"^/?api/dashboard/projects/[0-9]+/forecast/monthly/allocations/?$\",\"method\":\"GET\",\"permissions\":[\"Project_AllocationDetails_Forecasting\"]},{\"url\":\"^/?api/dashboard/projects/[0-9]+/forecast/monthly/allocations/totals/?$\",\"method\":\"GET\",\"permissions\":[\"Project_AllocationTotals_Forecasting\"]},{\"url\":\"^/?api/dashboard/projects/[0-9]+/forecast/monthly/hours/?$\",\"method\":\"GET\",\"permissions\":[\"Project_HoursDetails_Forecasting\"]},{\"url\":\"^/?api/dashboard/projects/[0-9]+/actual/monthly/reportedHours/?$\",\"method\":\"GET\",\"permissions\":[\"Project_ReportedHoursDetails\"]},{\"url\":\"^/?api/dashboard/projects/[0-9]+/actual/monthly/rates/?$\",\"method\":\"GET\",\"permissions\":[\"Project_RateDetails_Actuals\"]},{\"url\":\"^/?api/dashboard/projects/[0-9]+/actual/monthly/rates/totals/?$\",\"method\":\"GET\",\"permissions\":[\"Project_RateTotals_Actuals\"]},{\"url\":\"^/?api/dashboard/projects/[0-9]+/actual/monthly/revenues/?$\",\"method\":\"GET\",\"permissions\":[\"Project_RevenueDetails_Actuals\"]},{\"url\":\"^/?api/dashboard/projects/[0-9]+/actual/monthly/revenues/totals/?$\",\"method\":\"GET\",\"permissions\":[\"Project_RevenueTotals_Actuals\"]},{\"url\":\"^/?api/dashboard/projects/[0-9]+/actual/monthly/allocations/?$\",\"method\":\"GET\",\"permissions\":[\"Project_AllocationDetails_Actuals\"]},{\"url\":\"^/?api/dashboard/projects/[0-9]+/actual/monthly/allocations/totals/?$\",\"method\":\"GET\",\"permissions\":[\"Project_AllocationTotals_Actuals\"]},{\"url\":\"^/?api/dashboard/projects/actual/reportedHours/?$\",\"method\":\"PATCH\",\"permissions\":[\"Project_AdjustReportedHours\"]},{\"url\":\"^/?api/dashboard/projects/[0-9]+/reportedHours/[^/]+/?$\",\"method\":\"GET\",\"permissions\":[\"Project_ReportedHoursDetails\"]},{\"url\":\"^/?api/dashboard/projects/[0-9]+/reportedHours/[^/]+/markAsFinal/?$\",\"method\":\"PATCH\",\"permissions\":[\"Project_MarkAsFinalReportedHours\"]},{\"url\":\"^/?api/dashboard/projects/[0-9]+/monthsInfo/?$\",\"method\":\"GET\",\"permissions\":[]},{\"url\":\"^/?api/dashboard/projects/[0-9]+/generateExcel/?$\",\"method\":\"GET\",\"permissions\":[\"Project_ExcelTeamPlan\"]},{\"url\":\"^/?api/Utils/currencies/?$\",\"method\":\"GET\",\"permissions\":[]},{\"url\":\"^/?api/Utils/exchangeRates/forecast/?$\",\"method\":\"GET\",\"permissions\":[]},{\"url\":\"^/?api/Utils/positionLevelsDetails/?$\",\"method\":\"GET\",\"permissions\":[]},{\"url\":\"^/?api/Utils/positionLevelsForProjectDifferentiatedOnPositionDetails/?$\",\"method\":\"GET\",\"permissions\":[\"Project_PositionLevelsForDiffOnPosition\"]},{\"url\":\"^/?api/Clients/userPermissions/?$\",\"method\":\"GET\",\"permissions\":[]},{\"url\":\"^/?api/Clients/?$\",\"method\":\"GET\",\"permissions\":[]},{\"url\":\"^/?api/Clients/[0-9]+/?$\",\"method\":\"GET\",\"permissions\":[]},{\"url\":\"^/?api/Clients/status/?$\",\"method\":\"GET\",\"permissions\":[]},{\"url\":\"^/?api/Employees/userPermissions/?$\",\"method\":\"GET\",\"permissions\":[]},{\"url\":\"^/?api/Employees/?$\",\"method\":\"GET\",\"permissions\":[]},{\"url\":\"^/?api/Employees/status/?$\",\"method\":\"GET\",\"permissions\":[]},{\"url\":\"^/?api/Employees/hris/import/?$\",\"method\":\"POST\",\"permissions\":[]},{\"url\":\"^/?api/Employees/hris/test/?$\",\"method\":\"POST\",\"permissions\":[]}]",
+    "PAToolComponentsState": "{\"version\":\"4.1.0\",\"value\":{\"grids\":{\"project.list\":{\"search\":\"aqa\",\"page\":0}}}}",
+    "PAToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFxYXVzZXIiLCJyb2xlIjoiTi9BIiwiaXNBY3RpdmVEaXJlY3RvcnkiOiJGYWxzZSIsImV4cCI6MTYzODUyMDE5OSwiaXNzIjoiZGV2LXBlb3BsZWFsbG9jYXRpb24uZm9ydGVjaC5ybyIsImF1ZCI6ImRldi1wZW9wbGVhbGxvY2F0aW9uLmZvcnRlY2gucm8ifQ.V_ZoHCvsnzeMbqkWhHf4XNVxsJ-KEX5taPtm1Wyq-PE"
+  },
+  "3rdPartyPages": {
+    "hris": "https://hris.fortech.ro/chart.html#/U2.0"
+  },
+  "page": {
+    "root": ":5010/",
+    "login": "${page.root}",
+    "home": "${page.root}#/",
+    "projects": "${page.root}#/projects",
+    "units": "${page.root}#/units",
+    "businessUnits": "${page.root}#/businessUnits",
+    "about": "${page.root}#/about",
+    "hrisChart": "chart.html#/U2.0"
+  },
+  "loginPage": {
+    "detailsBtn": "//*[@id=\"details-button\"]",
+    "proceedBtn": "//*[@id=\"proceed-link\"]",
+    "loginBtn": "//button[@id='login']"
+  },
+  "homePage": {
+    "homeElementsPage": "//span[text()='People Allocation Tool']",
+    "projectsBtn": "//button[@type='button' and contains(., 'Projects')]",
+    "unitsBtn": "//button[@type='button' and contains(., 'Units')]",
+    "businessUnitsBtn": "//button[@type='button' and contains(., 'Business Units')]"
+  },
+  "header": {
+    "homePage": "//button[@type='button' and contains(., 'Home')]",
+    "menu": "//button[@type='button']//*[name()='svg']",
+    "about": "//a[text()='About']",
+    "logOut": "//a[text()='Log out']"
+  },
+  "footer": {
+    "footerElements": "//div[@class='footer-info']"
+  },
+  "projectsPage": {
+    "projectsList": "//tbody[@class='MuiTableBody-root']",
+    "project_title": "//h4[text()='Accelerator Admin V2']",
+    "manage_team_title": "//h4[contains(text(),'Team members for: ')]",
+    "dashboardAVG_title": "//h4[text()='Accelerator Admin V2']",
+    "dashboardPTO_title": "//h6[contains(text(),'JIRA PTOs')]",
+    "projectName": "//a[contains(text(),'Alber')]",
+    "paginationList": "//*[@class=\"MuiList-root MuiMenu-list MuiList-padding\"]",
+    "project_button": "//a[text()='Accelerator Admin V2']",
+    "manage_team_button": "//*[@index='1']//*[contains(@d, 'M16 11c1.66')]/..",
+    "dashboardAVG_button": "//*[@index='1']//*[contains(@d, 'M16.24')]/..",
+    "dashboardPTO_button": "//*[@index='1']//*[contains(@d, 'M19')]/..",
+    "search": "//input[@type='text']"
+  },
+  "businessUnitsPage": {
+    "BUList": "//*[@id=\"app\"]",
+    "businessUnitsDetails": "//*[contains(text(),'Business Unit BU2 Dashboard')]",
+    "dashboard_table": "//h4[text()='Business Unit BU2 Dashboard']",
+    "chart_table": "//h4[text()='Business Unit BU2 Revenue Chart']",
+    "people_view_table": "//h4[text()='Business Unit BU2 People View']",
+    "businessUnitResult": "//tr[@class=\"MuiTableRow-root MuiTableRow-hover\"]",
+    "paginationList": "//*[@class=\"MuiList-root MuiMenu-list MuiList-padding\"]",
+    "dashboard_button": "//*[@id='organizationTableDashboardButton3']",
+    "chart_button": "//*[@id='organizationTableChartButton3']",
+    "people_view_button": "//*[@id='organizationTablePeopleButton3']",
+    "search": "//*[@placeholder = 'Search']",
+    "pagination": "//*[@role='button' and contains(., '10 rows')]",
+    "businessUnit": "//*[contains(text(),'BU2')]"
+  },
+  "unitsPage": {
+    "unitsList": "//tbody[@class='MuiTableBody-root']",
+    "unitsDetail": "//h6[text()='Revenue Totals']",
+    "dashboard_table": "//h4[text()='Unit U2.0 Dashboard']",
+    "chart_table": "//h4[text()='Unit U2.0 Revenue Chart']",
+    "people_view_table": "//h4[text()='Unit U2.0 People View']",
+    "unit_tree": "//*[@id='organizationTableHrisButton10']",
+    "unitResult": "//tr[@class='MuiTableRow-root MuiTableRow-hover']",
+    "paginationList": "//*[@class=\"MuiList-root MuiMenu-list MuiList-padding\"]",
+    "dashboard_button": "//*[@id='organizationTableDashboardButton10']",
+    "chart_button": "//*[@id='organizationTableChartButton10']",
+    "people_view_button": "//*[@id='organizationTablePeopleButton10']",
+    "search": "//*[@placeholder = 'Search']",
+    "pagination": "//*[@role='button' and contains(., '10 rows')]",
+    "unit": "//*[contains(text(),'U2.5')]"
+  },
+  "fortech": {
+    "contact_button": "//*[@id='menu-item-9950']/a/label",
+    "details": "contact/"
+  },
+  "pagination": {
+    "buttonParent": "//tfoot[@class='MuiTableFooter-root']",
+    "buttonChild": "button",
+    "xpathTemplate": "//*[@class='${var}']"
+  }
+}

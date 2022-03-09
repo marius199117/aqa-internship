@@ -1,0 +1,23 @@
+{
+  "API": {
+    "usersApiPort": "5008",
+    "projectsApiPort": "5004",
+    "employeesApiPort": "5006"
+  },
+  "endpoints": {
+    "withParam": {
+      "Projects": "${API.projectsApiPort}/api/Projects/"
+    },
+    "withoutParam": {
+      "auth": "${API.usersApiPort}/api/users/auth/login",
+      "postProjects": "${API.projectsApiPort}/api/Projects/pim/create",
+      "updateProjects": "${API.projectsApiPort}/api/Projects/pim/Update",
+      "getEmployees": "${API.employeesApiPort}/api/Employees"
+    },
+    "getAllocations": "${API.projectsApiPort}/api/Projects/"
+  },
+  "userDetails": {
+    "username": "aqauser",
+    "password": "n3c7wCp3ja"
+  }
+}

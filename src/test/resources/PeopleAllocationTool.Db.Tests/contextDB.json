@@ -1,0 +1,7 @@
+{
+  "databaseConnection": {
+    "url": "jdbc:mysql://localhost:3306/pat",
+    "jdbcDriver": "com.mysql.cj.jdbc.Driver"
+  }
+
+}

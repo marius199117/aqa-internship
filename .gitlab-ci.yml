@@ -1,0 +1,13 @@
+image: markhobson/maven-chrome:jdk-8
+
+stages:
+  - test
+
+fortech:
+  stage: test
+  script:
+    - mvn clean test -Dcucumber.options="src/test/resources/PeopleAllocationTool/Ui/Tests/smoketest/FortechContinuousIntegration.feature"
+  artifacts:
+    when: always
+    paths:
+      - target/*
